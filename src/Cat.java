@@ -1,4 +1,4 @@
-public class Cat extends Animal implements Speakable,Runable {
+public class Cat extends Animal implements Speakable,Runable, Swimable {
 
     public Cat(String nickname, int legs, String owner) {
         super(nickname, legs, owner);
@@ -17,5 +17,10 @@ public class Cat extends Animal implements Speakable,Runable {
     @Override
     public String toString() {
         return "Cat" + super.toString();
+    }
+
+    @Override
+    public int swimSpeed() {
+        return 1;
     }
 }
